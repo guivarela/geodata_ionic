@@ -6,6 +6,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { ListaPaisesPageModule } from '../pages/lista-paises/lista-paises.module';
+import { JapaoPageModule } from '../pages/japao/japao.module';
+import { BrasilPageModule } from '../pages/brasil/brasil.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { HomePage } from '../pages/home/home';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ListaPaisesPageModule,
+    BrasilPageModule,
+    JapaoPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

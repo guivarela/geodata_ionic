@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { ListaPaisesPage } from '../lista-paises/lista-paises';
 
 @Component({
   selector: 'page-home',
@@ -9,6 +10,10 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
 
+  }
+
+  ListarPaises(Continente){
+    this.navCtrl.push(ListaPaisesPage, {Continente:Continente})
   }
 
 }
