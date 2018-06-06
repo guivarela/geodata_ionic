@@ -16,10 +16,10 @@
 	<ion-list>
 		<ion-item *ngFor="let pais of paises"(click)="irParaDestino(pais)">
       <ion-avatar item-start>
-        <img src="{{pais.bandeira}}">
+        <img src="{{pais.flag}}">
       </ion-avatar>
-			<h2>{{pais.nome}}</h2>
-			<p>{{pais.capital}}</p>
+			<h2>{{pais.name}}</h2>
+			<p>{{pais.region}}</p>
 		</ion-item>
 	</ion-list>
 </ion-content>

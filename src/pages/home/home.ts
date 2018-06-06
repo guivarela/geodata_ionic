@@ -13,11 +13,12 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
     // this.continente = navParams.get("Continente");
     var c1 = { nome: 'Africa'};
-    var c2 = { nome: 'America'};
+    var c2 = { nome: 'Americas'};
     var c3 = { nome: 'Asia'};
-    var c4 = { nome: 'Europa'};
+    var c4 = { nome: 'Europe'};
     var c5 = { nome: 'Oceania'};
-    this.continentes = [c1, c2, c3, c4, c5];
+    var c6 = { nome: 'Polar'};
+    this.continentes = [c1, c2, c3, c4, c5, c6];
 
   }
 
