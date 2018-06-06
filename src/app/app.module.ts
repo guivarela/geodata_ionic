@@ -7,8 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListaPaisesPageModule } from '../pages/lista-paises/lista-paises.module';
-import { JapaoPageModule } from '../pages/japao/japao.module';
-import { BrasilPageModule } from '../pages/brasil/brasil.module';
+import { DetalhePageModule } from '../pages/detalhe/detalhe.module';
 
 @NgModule({
   declarations: [
@@ -19,8 +18,7 @@ import { BrasilPageModule } from '../pages/brasil/brasil.module';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     ListaPaisesPageModule,
-    BrasilPageModule,
-    JapaoPageModule
+    DetalhePageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

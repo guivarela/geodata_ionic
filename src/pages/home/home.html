@@ -10,14 +10,10 @@
 	<ion-list>
 		<ion-item>
 			<ion-label>Escolha o Continente</ion-label>
-			<ion-select [(ngModel)]="Continente">
-				<ion-option value="all">Todos</ion-option>
-				<ion-option value="africa">Africa</ion-option>
-				<ion-option value="america">America</ion-option>
-				<ion-option value="asia">Asia</ion-option>
-				<ion-option value="europe">Europe</ion-option>
-				<ion-option value="oceania">Oceania</ion-option>
+			<ion-select [(ngModel)]="continente">
+				<ion-option value="Todos">Todos</ion-option>
+				<ion-option *ngFor="let continente of continentes">{{continente.nome}}</ion-option>
 			</ion-select>
 		</ion-item>
-		<button ion-button color="blue" (click)="ListarPaises(Continente)">Listar</button>
+		<button ion-button color="blue" (click)="ListarPaises(continente)">Listar</button>
 	</ion-list>

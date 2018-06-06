@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Pais } from '../../model/pais';
 
 /**
- * Generated class for the DetalhePaisPage page.
+ * Generated class for the DetalhePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +11,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-brasil',
-  templateUrl: 'brasil.html',
+  selector: 'page-detalhe',
+  templateUrl: 'detalhe.html',
 })
-export class BrasilPage {
-
+export class DetalhePage {
+  public pais:Pais;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.pais = navParams.get("paisSelecionado");
   }
 
+  
+
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BrasilPage');
+    console.log('ionViewDidLoad DetalhePage');
   }
 
 }
